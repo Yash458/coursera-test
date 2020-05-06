@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Our Menu</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0
+	}
+/* Base Styles */
+h1{
+	margin-bottom: 85px;
+}	
+div{
+	
+	border: 1px solid black;
+	
+}
+#p1{
+	background-color: gray;
+	width: 422px;
+	height: 170px; 
+	border: 2px solid black;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#p2{
+	background-color: gray;
+	width: 422px;
+	height: 170px; 
+	border: 2px solid black;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#p3{
+	background-color: gray;
+	width: 422px;
+	height: 170px; 
+	border: 2px solid black;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#content{
+	/*margin-top: 40px;*/
+	box-sizing: border-box;	
+    font-size: 19px;
+    background-color: gray;	
+    padding: 40px 10px 14px 10px;
+}
 
+#heading{
+	font-size: 19px;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	float:right;
+	border:2px solid black; 
+}
+
+
+/*Large device */
+
+@media(min-width: 992px){
+	#p1{
+		width: 30%;
+	}
+	
+	#p2 {
+		width: 30%;
+	}
+	
+	#p3{
+		width: 30%;
+	}
+}
+/*medium device*/
+@media(min-width:768px) and (max-width: 991px){
+	#p1,#p2 {
+		width: 45%;
+	}
+	#content{
+		padding: 10px 10px 14px 10px;
+	}
+	#p3,#header{
+		margin-top:25px;
+		width: 90%;
+	}
+
+}
+/*small device*/ 
+@media(max-width: 767px){
+	 #p1,#p2,#p3{
+	 	margin-top: 25px;
+		width: 95% ;
+	 }
+	 #centent{
+	 	margin-top: 25px;
+		width: 95% ;
+		padding: 40px 10px 14px 10px;
+
+	 }
+	 
+}
+</style>
+</head>
+<body>
+<h1 style="color: black; font-size: 50px; text-align: center;">Our Menu</h1>
+
+
+<div id="p1">
+	<div id="heading" style="background-color: #FFB6C1;">Chicken</div>
+		<div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. 
+		</div>
+</div>
+<div id="p2">
+		<div id="heading" style="background-color:#ff726f ;">Beef</div>
+		<div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.
+	</div>
+</div>
+
+<div id="p3">
+		<div id="heading" style="background-color:#fff9d8 ;">Sushi</div>
+		<div id="content"> Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.
+		</div>
+</div>
+
+</body>
+</html>
